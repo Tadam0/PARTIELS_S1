@@ -23,15 +23,25 @@ int main() {
     switch (choix) {
 
     case 1:
+			if (velosDispos>0){
       velosDispos = velosDispos - 1;
       cout << "\n";
       cout << "Vous empruntez un vélo.\n" << endl;
+			}
+			if (velosDispos<=0){
+				cout << "Il ne reste plus de vélos dans cette station.\n" << endl;
+			}
       break;
 
     case 2:
+			if (velosDispos<capacite){
 			velosDispos = velosDispos + 1;
       cout << "\n";
       cout << "Vous restituez un vélo.\n" << endl;
+			}
+			if (velosDispos>=capacite){
+				cout << "Cette station a atteint sa capacité maximale. Veuillez restituer votre vélo sur une autre station.\n" << endl;
+			}
       break;
 
     case 3:
