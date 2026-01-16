@@ -9,9 +9,8 @@ int main() {
 	int choix;
 	cout << "****** Gestion d'une station Vélô ******" << endl << endl;
 	cout << "-----------------------------------------" << endl;
-	//Partie à compléter 3.1
-	
-	
+	cout << "Vélos disponibles : " << velosDispos << endl;
+	cout << "Points d'attache disponibles: " << capacite-velosDispos << endl;
 	cout << "-----------------------------------------" << endl<< endl;
 	cout << "1. Emprunter un vélô" << endl;
 	cout << "2. Restituer un vélô" << endl;
